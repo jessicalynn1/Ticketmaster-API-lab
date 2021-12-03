@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 
 {# TODO: Replace EVENT NAME with the event's name #}
-{% block title %}Event Details | EVENT NAME{% endblock %}
+{% block title %}Event Details | {{EVENTNAME}}{% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="row">
     <div class="col">
-      {# TODO: Replace EVENT NAME with the event's name #}
-      <h2>EVENT NAME</h2>
+      {# TODO: Replace {{EVENTNAME}} with the event's name #}
+      <h2>{{EVENTNAME}}</h2>
 
       {#
         TODO: Replace THIS PAGE IS FOR FURTHER STUDY with
         event's description
       #}
       <p>
-        THIS PAGE IS FOR FURTHER STUDY.
+        {{description}}
       </p>
     </div>
   </div>
